@@ -68,7 +68,7 @@ function App() {
               <div className="food-info">
                 <h3>{food.name}</h3>
                 <p className="description">{food.description}</p>
-                <p className="price">${food.price.toFixed(2)}</p>
+                <p className="price">${Number(food.price).toFixed(2)}</p>
               </div>
               <button className="add-btn" onClick={() => addToCart(food)}>
                 + Add to Cart
